@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Tea",
+    "desc": "Refreshing green tea",
+    "price": 15,
+    "in_cart": false,
+    "in_fav": false,
+    "discount": 0,
+    "oldPrice": 0,
+    "quantity": 1,
+    "image": "https://cdn-prod.medicalnewstoday.com/content/images/articles/292/292160/a-cup-of-black-tea.jpg"
+  },
+  {
+    "title": "Coffee",
+    "desc": "Strong espresso",
+    "price": 45,
+    "in_cart": false,
+    "in_fav": false,
+    "discount": 10,
+    "oldPrice": 50,
+    "quantity": 1,
+    "image": "https://i.pinimg.com/736x/50/f1/7c/50f17c380525acf16c5ad8df185b1554.jpg"
+  },
+  {
+    "title": "Latte",
+    "desc": "Creamy latte with foam",
+    "price": 55,
+    "in_cart": false,
+    "in_fav": false,
+    "discount": 5,
+    "oldPrice": 58,
+    "quantity": 1,
+    "image": "https://i.pinimg.com/564x/1d/62/bd/1d62bd281e4347d8df87b5a4a020188b.jpg"
+  },
+  {
+    "title": "Cappuccino",
+    "desc": "Classic cappuccino",
+    "price": 50,
+    "in_cart": false,
+    "in_fav": false,
+    "discount": 0,
+    "oldPrice": 0,
+    "quantity": 1,
+    "image": "https://i.pinimg.com/564x/6a/86/c3/6a86c387495a30851e5843a582c7b6f2.jpg"
+  },
+  {
+    "title": "Muffin",
+    "desc": "Blueberry muffin",
+    "price": 70,
+    "in_cart": false,
+    "in_fav": false,
+    "discount": 20,
+    "oldPrice": 88,
+    "quantity": 1,
+    "image": "https://i.pinimg.com/564x/df/86/71/df86712b3896ed5156791eedf53ea935.jpg"
+  },
+  {
+  "title": "Chai Latte",
+  "desc": "Spiced chai with steamed milk",
+  "price": 30,
+  "in_cart": false,
+  "in_fav": false,
+  "discount": 0,
+  "oldPrice": 0,
+  "quantity": 1,
+  "image": "https://i.pinimg.com/564x/b5/aa/e6/b5aae65aaaf3b0a4fd69cc5a224622cd.jpg"
+},
+{
+  "title": "Iced Coffee",
+  "desc": "Chilled coffee with ice",
+  "price": 70,
+  "in_cart": false,
+  "in_fav": false,
+  "discount": 0,
+  "oldPrice": 0,
+  "quantity": 1,
+  "image": "https://i.pinimg.com/564x/b5/aa/e6/b5aae65aaaf3b0a4fd69cc5a224622cd.jpg"
+}
+
+]
