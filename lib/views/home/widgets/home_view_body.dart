@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:savor_brew/controller/product_cubit.dart';
-import 'package:savor_brew/views/list_items.dart';
+import 'package:savor_brew/views/home/widgets/list_items.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({

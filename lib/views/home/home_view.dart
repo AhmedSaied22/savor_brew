@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:savor_brew/core/app_styles.dart';
-import 'package:savor_brew/views/home_view_body.dart';
+import 'package:savor_brew/views/home/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

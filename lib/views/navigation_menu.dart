@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:savor_brew/models/navigate_model.dart';
-import 'package:savor_brew/views/cart.dart';
-import 'package:savor_brew/views/home_view.dart';
+import 'package:savor_brew/views/cart/cart.dart';
+import 'package:savor_brew/views/home/home_view.dart';
 
 class NavigationMenu extends StatefulWidget {
   const NavigationMenu({super.key});
