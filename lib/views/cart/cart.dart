@@ -79,7 +79,6 @@ class CartView extends StatelessWidget {
                                     ),
                                     onPressed: () {
                                       cubit.toggleCart(product);
-                                     
                                     },
                                   ))
                             ],
@@ -96,12 +95,23 @@ class CartView extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: const Color.fromARGB(255, 128, 64, 41),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Text(
-                        'Total with Tax: \$${cubit.calculateTotalWithTax().toStringAsFixed(2)}',
-                        style: const TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                      child: RichText(
+                        text: TextSpan(
+                          text: 'Total with Tax ',
+                          style: AppStyles.styleBold28(context).copyWith(
+                              fontWeight: FontWeight.bold, color: Colors.white),
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: '14%',
+                                style: AppStyles.styleRegular16(context)),
+                            TextSpan(
+                              text:
+                                  ' : \$${cubit.calculateTotalWithTax().toStringAsFixed(2)}',
+                              style: AppStyles.styleBold28(context).copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
+                          ],
                         ),
                       ),
                     ),

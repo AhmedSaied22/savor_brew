@@ -38,7 +38,8 @@ class ProductCubit extends Cubit<ProductState> {
     double subtotal =
         cartProducts.fold(0.0, (total, product) => total + product.price);
     double tax = subtotal * taxRate;
-    return subtotal + tax;
+    double totalPriceAfterTax = subtotal + tax;
+    return totalPriceAfterTax;
   }
 
   List<Product> get cartProducts {
