@@ -83,7 +83,12 @@ class _LoginFormState extends State<LoginForm> {
               obscureText: _obscureText,
               labelText: 'Password',
               suffixIcon: IconButton(
-                  onPressed: _toggle, icon: const Icon(Icons.remove_red_eye)),
+                  onPressed: _toggle,
+                  icon: Icon(
+                    _obscureText
+                        ? Icons.visibility_off_rounded
+                        : Icons.visibility_rounded,
+                  )),
             ),
             const SizedBox(height: 24),
             Align(
@@ -97,7 +102,12 @@ class _LoginFormState extends State<LoginForm> {
             const SizedBox(height: 24),
             CustomButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(context, NavigationMenu.id);
+                if (formKey.currentState!.validate()) {
+                  Navigator.pushReplacementNamed(context, NavigationMenu.id);
+                } else {
+                  autovalidateMode = AutovalidateMode.always;
+                  setState(() {});
+                }
               },
               text: 'LOGIN',
             ),

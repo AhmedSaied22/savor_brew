@@ -84,15 +84,20 @@ class _LoginFormState extends State<LoginForm> {
                   onPressed: _toggle,
                   icon: Icon(
                     _obscureText
-                        ? Icons.visibility_rounded
-                        : Icons.visibility_off_rounded,
+                        ? Icons.visibility_off_rounded
+                        : Icons.visibility_rounded,
                     color: Colors.brown,
                   )),
             ),
             const SizedBox(height: 48),
             CustomButton(
               onPressed: () {
+                 if (formKey.currentState!.validate()) {
                 Navigator.pushReplacementNamed(context, LoginView.id);
+                } else {
+                  autovalidateMode = AutovalidateMode.always;
+                  setState(() {});
+                }
               },
               text: 'Register',
             ),

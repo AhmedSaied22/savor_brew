@@ -78,11 +78,8 @@ class CartView extends StatelessWidget {
                                           : Icons.add_shopping_cart,
                                     ),
                                     onPressed: () {
-                                      if (product.inCart) {
-                                        cubit.removeCart(product);
-                                      } else {
-                                        cubit.toggleCart(product);
-                                      }
+                                      cubit.toggleCart(product);
+                                     
                                     },
                                   ))
                             ],

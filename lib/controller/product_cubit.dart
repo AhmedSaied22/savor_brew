@@ -19,20 +19,6 @@ class ProductCubit extends Cubit<ProductState> {
     emit(ProductLoaded(products: products));
   }
 
-  void removeCart(Product product) {
-    if (state is ProductLoaded) {
-      final products = List<Product>.from((state as ProductLoaded).products);
-      final index = products.indexWhere((p) => p == product);
-
-      if (index != -1) {
-        // Update the product to be not in the cart "change it later"
-        final updatedProduct = products[index].copyWith(inCart: false);
-        products[index] = updatedProduct;
-        emit(ProductLoaded(products: products));
-      }
-    }
-  }
-
   void toggleCart(Product product) {
     if (state is ProductLoaded) {
       final products = List<Product>.from((state as ProductLoaded).products);
