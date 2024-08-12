@@ -14,8 +14,11 @@ class CartView extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: BlocBuilder<ProductCubit, ProductState>(
           builder: (context, state) {
+            var cubit = BlocProvider.of<ProductCubit>(context);
             if (state is ProductLoaded) {
-              var cubit = BlocProvider.of<ProductCubit>(context);
+              if (cubit.cartProducts.isEmpty) {
+                return Center(child: Text('Please add some products to cart'));
+              }
               return CustomScrollView(
                 slivers: [
                   SliverList(
@@ -119,7 +122,7 @@ class CartView extends StatelessWidget {
                 ],
               );
             }
-            return const Center(child: CircularProgressIndicator());
+            return Center(child: CircularProgressIndicator());
           },
         ),
       ),
